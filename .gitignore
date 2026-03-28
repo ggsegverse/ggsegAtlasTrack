@@ -22,3 +22,10 @@ docs/
 
 # Temporary files
 inst/doc
+data-raw/**/*.nii
+data-raw/**/*.nii.gz
+data-raw/**/*.mgz
+*.nii
+*.nii.gz
+*.mgz
+*.mat
