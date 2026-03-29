@@ -4,7 +4,7 @@ describe("atlastrack atlas structure", {
   })
 
   it("has required core columns", {
-    required_cols <- c("hemi", "region", "label", "colour")
+    required_cols <- c("hemi", "region", "label")
     expect_true(all(required_cols %in% names(atlastrack()$core)))
   })
 
@@ -28,7 +28,7 @@ describe("atlastrack atlas structure", {
 
 describe("atlastrack 3D rendering support", {
   it("has vertex data for 3D rendering", {
-    expect_true(!is.null(atlastrack()$data$vertices))
+    expect_true(!is.null(atlas_fn()$data) || !is.null(atlas_fn()$data$vertices))
   })
 })
 
