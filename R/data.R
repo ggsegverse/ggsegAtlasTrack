@@ -16,4 +16,5 @@
 #' @examples
 #' atlastrack()
 # fmt: skip
+#' plot(atlastrack())
 atlastrack <- function() .atlastrack
