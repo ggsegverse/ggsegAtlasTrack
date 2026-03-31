@@ -4,6 +4,7 @@
 #' parcellation, commonly used with ABCD study data.
 #'
 #' @family ggseg_atlases
+#' @family tract_atlases
 #'
 #' @references Hagler DJ Jr, et al. (2019). "Image processing and analysis
 #'   methods for the Adolescent Brain Cognitive Development Study."
