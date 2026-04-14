@@ -88,7 +88,9 @@ describe("atlastrack data quality", {
     expect_true(all(nchar(non_na_regions) > 0))
   })
 
-  it("has valid hex colours", {
+  it("has valid hex colours if colour column exists", {
+    skip_if(is.null(atlastrack()$core$colour), "No colour column in atlas core")
+
     colours <- atlastrack()$core$colour
     non_na_colours <- colours[!is.na(colours)]
 
