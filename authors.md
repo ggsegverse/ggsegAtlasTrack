@@ -11,7 +11,7 @@
 ## Citation
 
 Source:
-[`DESCRIPTION`](https://github.com/ggsegverse/ggsegAtlastrack/blob/main/DESCRIPTION)
+[`DESCRIPTION`](https://github.com/ggsegverse/ggsegAtlastrack/blob/v1.0.0/DESCRIPTION)
 
 Mowinckel A, Vidal-Pineiro D (2026). *ggsegAtlastrack: AtlasTrack Fiber
 Tract Atlas for the 'ggseg' Ecosystem*. R package version 1.0.0,
