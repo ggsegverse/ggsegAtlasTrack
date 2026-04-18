@@ -1,34 +1,47 @@
 # ggsegAtlasTrack
 
-AtlasTrack Fiber Tract Atlas for the ggsegverse Ecosystem.
+AtlasTrack probabilistic white matter fiber tract atlas for the ggseg
+ecosystem.
 
 ## Installation
 
-``` r
-# From r-universe
-install.packages("ggsegAtlastrack", repos = "https://ggsegverse.r-universe.dev")
+We recommend installing the ggseg-atlases through the ggseg
+[r-universe](https://ggseg.r-universe.dev/ui#builds):
 
-# From GitHub
-# install.packages("remotes")
-remotes::install_github("ggsegverse/ggsegAtlasTrack")
+``` r
+options(repos = c(
+  ggseg = "https://ggseg.r-universe.dev",
+  CRAN = "https://cloud.r-project.org"
+))
+
+install.packages("ggsegAtlasTrack")
 ```
 
-## Atlases
-
-### atlastrack
-
-AtlasTrack probabilistic white matter fiber tract atlas with 35 tracts.
+You can install this package from [GitHub](https://github.com/) with:
 
 ``` r
+# install.packages("pak")
+pak::pak("ggsegverse/ggsegAtlasTrack")
+```
+
+## AtlasTrack
+
+``` r
+library(ggseg)
 library(ggsegAtlastrack)
-plot(atlastrack())
+library(ggplot2)
+
+ggplot() +
+  geom_brain(
+    atlas = atlastrack(),
+    mapping = aes(fill = label),
+    show.legend = FALSE
+  ) +
+  theme_void()
 ```
 
-![](reference/figures/README-atlastrack-1.png) \## Data source
+![](reference/figures/README-atlastrack-1.png)
 
-[NITRC](https://www.nitrc.org/projects/atlastrack) (converted from
-MATLAB sparse format).
+## Data source
 
-- **Date obtained**: 2026-03-28
-
-- **Date obtained**: 2026-03-28
+Data obtained from [NITRC](https://www.nitrc.org/projects/atlastrack).
