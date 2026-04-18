@@ -1,24 +1,39 @@
-
+---
+format: gfm
+---
 
 <!-- README.md is generated from README.qmd. Please edit that file -->
+
+```{r}
+#| label: setup
+#| include: false
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%",
+  fig.width = 10,
+  fig.retina = 3
+)
+```
 
 # ggsegAtlasTrack
 
 <!-- badges: start -->
-
 [![R-CMD-check](https://github.com/ggsegverse/ggsegAtlasTrack/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ggsegverse/ggsegAtlasTrack/actions/workflows/R-CMD-check.yaml)
-[![r-universe](https://ggseg.r-universe.dev/badges/ggsegAtlasTrack.png)](https://ggseg.r-universe.dev/ggsegAtlasTrack)
+[![r-universe](https://ggseg.r-universe.dev/badges/ggsegAtlasTrack)](https://ggseg.r-universe.dev/ggsegAtlasTrack)
 <!-- badges: end -->
 
-AtlasTrack probabilistic white matter fiber tract atlas for the ggseg
-ecosystem.
+AtlasTrack probabilistic white matter fiber tract atlas for the ggseg ecosystem.
 
 ## Installation
 
 We recommend installing the ggseg-atlases through the ggseg
 [r-universe](https://ggseg.r-universe.dev/ui#builds):
 
-``` r
+```{r}
+#| label: install-r-universe
+#| eval: false
 options(repos = c(
   ggseg = "https://ggseg.r-universe.dev",
   CRAN = "https://cloud.r-project.org"
@@ -29,14 +44,15 @@ install.packages("ggsegAtlasTrack")
 
 You can install this package from [GitHub](https://github.com/) with:
 
-``` r
+```r
 # install.packages("pak")
 pak::pak("ggsegverse/ggsegAtlasTrack")
 ```
 
 ## AtlasTrack
 
-``` r
+```{r}
+#| label: atlastrack
 library(ggseg)
 library(ggsegAtlastrack)
 library(ggplot2)
@@ -49,8 +65,6 @@ ggplot() +
   ) +
   theme_void()
 ```
-
-<img src="man/figures/README-atlastrack-1.png" style="width:100.0%" />
 
 ## Data source
 
