@@ -10,3 +10,4 @@
 ^\.lintr$
 ^codecov\.yml$
 ^Rplots\.pdf$
+^README\.qmd$
