@@ -24,6 +24,8 @@ Suggests:
     ggplot2,
     testthat (>= 3.0.0),
     vdiffr
+Remotes:
+    ggsegverse/ggseg
 URL: https://github.com/ggsegverse/ggsegAtlastrack
 BugReports: https://github.com/ggsegverse/ggsegAtlastrack/issues
 Roxygen: list(markdown = TRUE)

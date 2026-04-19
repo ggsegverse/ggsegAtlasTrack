@@ -27,4 +27,7 @@ print(atlastrack)
 plot(atlastrack)
 
 .atlastrack <- atlastrack
-usethis::use_data(.atlastrack, overwrite = TRUE, compress = "xz", internal = TRUE)
+  usethis::use_data(
+    .atlastrack,
+    overwrite = TRUE, compress = "xz", internal = TRUE
+  )

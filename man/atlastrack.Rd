@@ -15,7 +15,7 @@ parcellation, commonly used with ABCD study data.
 }
 \examples{
 atlastrack()
-plot(atlastrack())
+\dontrun{plot(atlastrack())}
 }
 \references{
 Hagler DJ Jr, et al. (2019). "Image processing and analysis
@@ -24,3 +24,4 @@ methods for the Adolescent Brain Cognitive Development Study."
 \doi{10.1016/j.neuroimage.2019.116091}
 }
 \concept{ggseg_atlases}
+\concept{tract_atlases}
