@@ -75,5 +75,5 @@ atlastrack()
 #> 33 left  l sifc  L_SIFC 
 #> 34 right r ifsfc R_IFSFC
 #> 35 left  l ifsfc L_IFSFC
-plot(atlastrack())
+if (FALSE) plot(atlastrack()) # \dontrun{}
 ```
