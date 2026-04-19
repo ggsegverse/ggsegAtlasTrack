@@ -22,7 +22,7 @@ future::plan(future::sequential)
 progressr::handlers("cli")
 progressr::handlers(global = TRUE)
 
-# ── Obtain tract probability maps ──────────────────────────────
+# ── Obtain tract probability maps ─────────────�
 # AtlasTrack provides probabilistic white matter tract maps as NIfTI volumes.
 # Obtain the atlas volume from the ABCD study resources.
 #
@@ -39,7 +39,7 @@ if (!file.exists(vol_file)) {
   ))
 }
 
-# ── Create atlas from volume ─────────────────────────────────────
+# ── Create atlas from volume ───────────────�
 cli::cli_h1("Creating AtlasTrack fiber tract atlas")
 
 atlastrack <- create_subcortical_from_volume(
@@ -56,7 +56,7 @@ atlastrack <- atlastrack |>
 cli::cli_alert_success("atlastrack: {nrow(atlastrack$core)} tracts")
 print(atlastrack)
 
-# ── Save atlas data ──────────────────────────────────────────────
+# ── Save atlas data ──────────────────�
 brain_pals <- stats::setNames(
   list(atlastrack$palette),
   atlastrack$atlas

@@ -16,5 +16,5 @@
 #' @export
 #' @examples
 #' atlastrack()
-#' plot(atlastrack())
+#' \dontrun{plot(atlastrack())}
 atlastrack <- function() .atlastrack

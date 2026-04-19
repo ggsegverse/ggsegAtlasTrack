@@ -28,7 +28,10 @@ describe("atlastrack atlas structure", {
 
 describe("atlastrack 3D rendering support", {
   it("has vertex data for 3D rendering", {
-    expect_true(!is.null(atlastrack()$data) || !is.null(atlastrack()$data$vertices))
+    expect_true(
+      !is.null(atlastrack()$data) ||
+        !is.null(atlastrack()$data$vertices)
+    )
   })
 })
 
