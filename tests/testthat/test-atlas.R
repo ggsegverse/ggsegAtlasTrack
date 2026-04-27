@@ -100,7 +100,7 @@ describe("atlastrack data quality", {
     if (length(non_na_colours) > 0) {
       is_valid <- vapply(non_na_colours, function(col) {
         grepl("^#[0-9A-Fa-f]{6}$|^#[0-9A-Fa-f]{8}$", col) ||
-        col %in% grDevices::colours()
+          col %in% grDevices::colours()
       }, logical(1))
       expect_true(all(is_valid))
     }
