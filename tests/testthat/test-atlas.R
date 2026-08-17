@@ -9,7 +9,9 @@ describe("atlastrack atlas structure", {
   })
 
   it("has valid hemisphere values", {
-    valid_hemis <- c("left", "right")
+    # Commissural tracts (Fmaj, Fmin) cross the midline and belong to neither
+    # hemisphere.
+    valid_hemis <- c("left", "right", "midline")
     hemis <- unique(atlastrack()$core$hemi)
     hemis <- hemis[!is.na(hemis)]
     expect_true(all(hemis %in% valid_hemis))
