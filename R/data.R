@@ -16,5 +16,7 @@
 #' @export
 #' @examples
 #' atlastrack()
-#' \dontrun{plot(atlastrack())}
+#'
+#' library(ggseg.formats)
+#' plot(atlastrack())
 atlastrack <- function() .atlastrack
