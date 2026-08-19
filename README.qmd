@@ -53,17 +53,10 @@ pak::pak("ggsegverse/ggsegAtlasTrack")
 
 ```{r}
 #| label: atlastrack
-library(ggseg)
+library(ggseg.formats)
 library(ggsegAtlastrack)
-library(ggplot2)
 
-ggplot() +
-  geom_brain(
-    atlas = atlastrack(),
-    mapping = aes(fill = label),
-    show.legend = FALSE
-  ) +
-  theme_void()
+plot(atlastrack())
 ```
 
 ## Data source

@@ -40,3 +40,6 @@ data-raw/**/*.svg
 data-raw/**/surface_overlays/
 data-raw/**/tess
 Rplots.pdf
+
+/.quarto/
+**/*.quarto_ipynb
