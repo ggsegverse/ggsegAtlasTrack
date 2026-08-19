@@ -11,7 +11,7 @@ parcellation, commonly used with ABCD study data."></head><body>
 
     <a class="navbar-brand me-2" href="../index.html">ggsegAtlastrack</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">2.0.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,14 +70,13 @@ methods for the Adolescent Brain Cognitive Development Study."
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">atlastrack</span><span class="op">(</span><span class="op">)</span></span></span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">──</span> <span style="font-weight: bold;">atlastrack ggseg atlas</span> <span style="color: #00BBBB;">──────────────────────────────────────────────────────</span></span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">Type: subcortical</span></span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">Regions:</span> 35</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">Hemispheres:</span> right, left, NA</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">Views:</span> axial_1, axial_2, axial_3, axial_4, axial_5, axial_6, axial_7,</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> coronal_1, coronal_2, coronal_3, coronal_4, coronal_5, sagittal</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">Type: tract</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">Regions:</span> 34</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">Hemispheres:</span> right, left, midline</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">Views:</span> coronal, inferior_axial, mid_axial, sagittal, superior_axial</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">Palette:</span> <span style="color: #00BB00;">✔</span></span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="font-weight: bold;">Rendering:</span> <span style="color: #00BB00;">✔</span> ggseg</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> ggseg3d (meshes)</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> ggseg3d (centerlines)</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> ────────────────────────────────────────────────────────────────────────────────</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>     hemi region label</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1  right   r fx  R_Fx</span>
@@ -90,8 +89,11 @@ methods for the Adolescent Brain Cognitive Development Study."
 <span class="r-out co"><span class="r-pr">#&gt;</span> 8   left  l cst L_CST</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 9  right  r atr R_ATR</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 10  left  l atr L_ATR</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="font-style: italic;">... with 25 more rows</span></span>
-<span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="fu">atlastrack</span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="co"># \dontrun{}</span></span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="font-style: italic;">... with 24 more rows</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/ggsegverse/ggseg.formats" class="external-link">ggseg.formats</a></span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="fu">atlastrack</span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-plt img"><img src="atlastrack-1.png" alt="" width="700" height="433"></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>

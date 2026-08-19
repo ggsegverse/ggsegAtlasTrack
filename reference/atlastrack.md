@@ -28,14 +28,13 @@ the Adolescent Brain Cognitive Development Study." *NeuroImage*,
 atlastrack()
 #> 
 #> ── atlastrack ggseg atlas ──────────────────────────────────────────────────────
-#> Type: subcortical
-#> Regions: 35
-#> Hemispheres: right, left, NA
-#> Views: axial_1, axial_2, axial_3, axial_4, axial_5, axial_6, axial_7,
-#> coronal_1, coronal_2, coronal_3, coronal_4, coronal_5, sagittal
+#> Type: tract
+#> Regions: 34
+#> Hemispheres: right, left, midline
+#> Views: coronal, inferior_axial, mid_axial, sagittal, superior_axial
 #> Palette: ✔
 #> Rendering: ✔ ggseg
-#> ✔ ggseg3d (meshes)
+#> ✔ ggseg3d (centerlines)
 #> ────────────────────────────────────────────────────────────────────────────────
 #>     hemi region label
 #> 1  right   r fx  R_Fx
@@ -48,6 +47,8 @@ atlastrack()
 #> 8   left  l cst L_CST
 #> 9  right  r atr R_ATR
 #> 10  left  l atr L_ATR
-#> ... with 25 more rows
-if (FALSE) plot(atlastrack()) # \dontrun{}
+#> ... with 24 more rows
+
+library(ggseg.formats)
+plot(atlastrack())
 ```
