@@ -15,7 +15,9 @@ parcellation, commonly used with ABCD study data.
 }
 \examples{
 atlastrack()
-\dontrun{plot(atlastrack())}
+
+library(ggseg.formats)
+plot(atlastrack())
 }
 \references{
 Hagler DJ Jr, et al. (2019). "Image processing and analysis
