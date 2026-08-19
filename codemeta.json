@@ -7,13 +7,13 @@
   "codeRepository": "https://github.com/ggsegverse/ggsegAtlastrack",
   "issueTracker": "https://github.com/ggsegverse/ggsegAtlastrack/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 4.5.2 (2025-10-31)",
+  "runtimePlatform": "R version 4.6.1 (2026-06-24)",
   "author": [
     {
       "@type": "Person",
@@ -50,7 +50,7 @@
         "name": "Comprehensive R Archive Network (CRAN)",
         "url": "https://cran.r-project.org"
       },
-      "sameAs": "https://CRAN.R-project.org/package=ggseg"
+      "sameAs": "https://github.com/ggsegverse/ggseg"
     },
     {
       "@type": "SoftwareApplication",
@@ -123,7 +123,8 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "NAKB",
+  "fileSize": "1187.449KB",
   "releaseNotes": "https://github.com/ggsegverse/ggsegAtlastrack/blob/main/NEWS.md",
+  "readme": "https://github.com/ggsegverse/ggsegAtlasTrack/blob/main/README.md",
   "contIntegration": "https://github.com/ggsegverse/ggsegAtlasTrack/actions/workflows/R-CMD-check.yaml"
 }
