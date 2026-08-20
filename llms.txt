@@ -1,53 +1,6 @@
-# ggsegAtlasTrack
-
-AtlasTrack probabilistic white matter fiber tract atlas for the ggseg
-ecosystem.
-
-## Installation
-
-We recommend installing the ggseg-atlases through the ggseg
-[r-universe](https://ggseg.r-universe.dev/ui#builds):
-
-``` r
-
-options(repos = c(
-  ggseg = "https://ggseg.r-universe.dev",
-  CRAN = "https://cloud.r-project.org"
-))
-
-install.packages("ggsegAtlasTrack")
-```
-
-You can install this package from [GitHub](https://github.com/) with:
-
-``` r
-
-# install.packages("pak")
-pak::pak("ggsegverse/ggsegAtlasTrack")
-```
-
-## AtlasTrack
-
-``` r
-
-library(ggseg)
-library(ggsegAtlastrack)
-library(ggplot2)
-
-ggplot() +
-  geom_brain(
-    atlas = atlastrack(),
-    mapping = aes(fill = label),
-    show.legend = FALSE
-  ) +
-  theme_void()
-```
-
-![](reference/figures/README-atlastrack-1.png)
-
-## Data source
-
-Data obtained from [NITRC](https://www.nitrc.org/projects/atlastrack).
+AtlasTrack probabilistic white matter fiber tract atlas for the 'ggseg'
+ecosystem. Provides 'ggseg_atlas' objects for DTI fiber tract
+visualization, commonly used with ABCD study data.
 
 # Package index
 
