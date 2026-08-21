@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>AtlasTrack Fiber Tract Atlas for the ggseg Ecosystem • ggsegAtlastrack</title>
+<title>AtlasTrack Fiber Tract Atlas for the ggseg Ecosystem • ggsegAtlasTrack</title>
 <script src="lightswitch.js"></script><script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="deps/bootstrap-5.3.8/bootstrap.min.css" rel="stylesheet">
 <script src="deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="deps/Inter-0.4.10/font.css" rel="stylesheet">
@@ -25,7 +25,7 @@
     <a href="https://ggsegverse.github.io" class="external-link">
   <img src="https://raw.githubusercontent.com/ggsegverse/ggseg.docs/HEAD/inst/pkgdown/assets/ggsegverse-logo.png" id="ggsegverse-logo" alt="ggsegverse"></a>
 
-    <a class="navbar-brand me-2" href="index.html">ggsegAtlastrack</a>
+    <a class="navbar-brand me-2" href="index.html">ggsegAtlasTrack</a>
 
     <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">2.0.0</small>
 
@@ -59,8 +59,44 @@
   </div>
 </nav><div class="container template-home">
 <div class="row">
-  <main id="main" class="col-md-9">
-AtlasTrack probabilistic white matter fiber tract atlas for the 'ggseg' ecosystem. Provides 'ggseg_atlas' objects for DTI fiber tract visualization, commonly used with ABCD study data.
+  <main id="main" class="col-md-9"><div class="section level1">
+<div class="page-header"><h1 id="ggsegatlastrack">ggsegAtlasTrack<a class="anchor" aria-label="anchor" href="#ggsegatlastrack"></a>
+</h1></div>
+<!-- badges: start -->
+
+<p>AtlasTrack probabilistic white matter fiber tract atlas for the ggseg ecosystem.</p>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
+<p>We recommend installing the ggseg-atlases through the ggseg <a href="https://ggseg.r-universe.dev/ui#builds" class="external-link">r-universe</a>:</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">options</a></span><span class="op">(</span>repos <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span></span>
+<span>  ggseg <span class="op">=</span> <span class="st">"https://ggseg.r-universe.dev"</span>,</span>
+<span>  CRAN <span class="op">=</span> <span class="st">"https://cloud.r-project.org"</span></span>
+<span><span class="op">)</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"ggsegAtlasTrack"</span><span class="op">)</span></span></code></pre></div>
+<p>You can install this package from <a href="https://github.com/" class="external-link">GitHub</a> with:</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># install.packages("pak")</span></span>
+<span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"ggsegverse/ggsegAtlasTrack"</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="atlastrack">AtlasTrack<a class="anchor" aria-label="anchor" href="#atlastrack"></a>
+</h2>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/ggsegverse/ggseg.formats" class="external-link">ggseg.formats</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/ggsegverse/ggsegAtlastrack" class="external-link">ggsegAtlastrack</a></span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="fu"><a href="reference/atlastrack.html">atlastrack</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<p><img src="reference/figures/README-atlastrack-1.png" style="width:100.0%"></p>
+</div>
+<div class="section level2">
+<h2 id="data-source">Data source<a class="anchor" aria-label="anchor" href="#data-source"></a>
+</h2>
+<p>Data obtained from <a href="https://www.nitrc.org/projects/atlastrack" class="external-link">NITRC</a>.</p>
+</div>
+</div>
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
@@ -81,7 +117,7 @@ AtlasTrack probabilistic white matter fiber tract atlas for the 'ggseg' ecosyste
 <div class="citation">
 <h2 data-toc-skip>Citation</h2>
 <ul class="list-unstyled">
-<li><a href="authors.html#citation">Citing ggsegAtlastrack</a></li>
+<li><a href="authors.html#citation">Citing ggsegAtlasTrack</a></li>
 </ul>
 </div>
 
@@ -93,7 +129,13 @@ AtlasTrack probabilistic white matter fiber tract atlas for the 'ggseg' ecosyste
 </ul>
 </div>
 
-
+<div class="dev-status">
+<h2 data-toc-skip>Dev status</h2>
+<ul class="list-unstyled">
+<li><a href="https://github.com/ggsegverse/ggsegAtlasTrack/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/ggsegverse/ggsegAtlasTrack/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
+<li><a href="https://ggseg.r-universe.dev/ggsegAtlasTrack" class="external-link"><img src="https://ggseg.r-universe.dev/badges/ggsegAtlasTrack.png" alt="r-universe"></a></li>
+</ul>
+</div>
 
   </aside>
 </div>
