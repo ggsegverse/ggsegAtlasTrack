@@ -1,4 +1,4 @@
-Package: ggsegAtlastrack
+Package: ggsegAtlasTrack
 Title: AtlasTrack Fiber Tract Atlas for the 'ggseg' Ecosystem
 Version: 2.0.0
 Authors@R: c(person("Athanasia Mo", "Mowinckel",
