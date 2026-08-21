@@ -1,9 +1,9 @@
 {
   "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
   "@type": "SoftwareSourceCode",
-  "identifier": "ggsegAtlastrack",
+  "identifier": "ggsegAtlasTrack",
   "description": "AtlasTrack probabilistic white matter fiber tract atlas for the 'ggseg' ecosystem. Provides 'ggseg_atlas' objects for DTI fiber tract visualization, commonly used with ABCD study data.",
-  "name": "ggsegAtlastrack: AtlasTrack Fiber Tract Atlas for the 'ggseg' Ecosystem",
+  "name": "ggsegAtlasTrack: AtlasTrack Fiber Tract Atlas for the 'ggseg' Ecosystem",
   "codeRepository": "https://github.com/ggsegverse/ggsegAtlastrack",
   "issueTracker": "https://github.com/ggsegverse/ggsegAtlastrack/issues",
   "license": "https://spdx.org/licenses/MIT",
@@ -123,7 +123,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "1187.449KB",
+  "fileSize": "1010.242KB",
   "releaseNotes": "https://github.com/ggsegverse/ggsegAtlastrack/blob/main/NEWS.md",
   "readme": "https://github.com/ggsegverse/ggsegAtlasTrack/blob/main/README.md",
   "contIntegration": "https://github.com/ggsegverse/ggsegAtlasTrack/actions/workflows/R-CMD-check.yaml"
