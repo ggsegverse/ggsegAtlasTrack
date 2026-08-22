@@ -11,16 +11,16 @@
 ## Citation
 
 Source:
-[`DESCRIPTION`](https://github.com/ggsegverse/ggsegAtlastrack/blob/main/DESCRIPTION)
+[`DESCRIPTION`](https://github.com/ggsegverse/ggsegAtlasTrack/blob/main/DESCRIPTION)
 
 Mowinckel A, Vidal-Pineiro D (2026). *ggsegAtlasTrack: AtlasTrack Fiber
 Tract Atlas for the 'ggseg' Ecosystem*. R package version 2.0.0,
-<https://github.com/ggsegverse/ggsegAtlastrack>.
+<https://github.com/ggsegverse/ggsegAtlasTrack>.
 
     @Manual{,
       title = {ggsegAtlasTrack: AtlasTrack Fiber Tract Atlas for the 'ggseg' Ecosystem},
       author = {Athanasia Mo Mowinckel and Didac Vidal-Pineiro},
       year = {2026},
       note = {R package version 2.0.0},
-      url = {https://github.com/ggsegverse/ggsegAtlastrack},
+      url = {https://github.com/ggsegverse/ggsegAtlasTrack},
     }

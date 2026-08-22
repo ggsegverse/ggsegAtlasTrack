@@ -1,4 +1,4 @@
-# ggsegAtlastrack: AtlasTrack Fiber Tract Atlas for the 'ggseg' Ecosystem
+# ggsegAtlasTrack: AtlasTrack Fiber Tract Atlas for the 'ggseg' Ecosystem
 
 AtlasTrack probabilistic white matter fiber tract atlas for the 'ggseg'
 ecosystem. Provides 'ggseg_atlas' objects for DTI fiber tract
@@ -8,9 +8,9 @@ visualization, commonly used with ABCD study data.
 
 Useful links:
 
-- <https://github.com/ggsegverse/ggsegAtlastrack>
+- <https://github.com/ggsegverse/ggsegAtlasTrack>
 
-- Report bugs at <https://github.com/ggsegverse/ggsegAtlastrack/issues>
+- Report bugs at <https://github.com/ggsegverse/ggsegAtlasTrack/issues>
 
 ## Author
 

@@ -1,4 +1,4 @@
 # License
 
     YEAR: 2026
-    COPYRIGHT HOLDER: ggsegAtlastrack authors
+    COPYRIGHT HOLDER: ggsegAtlasTrack authors
