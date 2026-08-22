@@ -54,7 +54,7 @@ pak::pak("ggsegverse/ggsegAtlasTrack")
 ```{r}
 #| label: atlastrack
 library(ggseg.formats)
-library(ggsegAtlastrack)
+library(ggsegAtlasTrack)
 
 plot(atlastrack())
 ```

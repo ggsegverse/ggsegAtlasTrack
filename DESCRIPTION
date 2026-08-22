@@ -26,8 +26,8 @@ Suggests:
     vdiffr
 Remotes:
     ggsegverse/ggseg
-URL: https://github.com/ggsegverse/ggsegAtlastrack
-BugReports: https://github.com/ggsegverse/ggsegAtlastrack/issues
+URL: https://github.com/ggsegverse/ggsegAtlasTrack
+BugReports: https://github.com/ggsegverse/ggsegAtlasTrack/issues
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
 Config/testthat/edition: 3

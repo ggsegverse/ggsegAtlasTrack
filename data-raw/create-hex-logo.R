@@ -1,4 +1,4 @@
-# Create hex logo for ggsegAtlastrack
+# Create hex logo for ggsegAtlasTrack
 # This script creates a hex sticker matching the ggseg ecosystem style
 
 library(ggplot2)
@@ -33,7 +33,7 @@ dir.create(here::here("man/figures"), recursive = TRUE, showWarnings = FALSE)
 for (ext in c("png", "svg")) {
   sticker(
     p,
-    package = "ggsegAtlastrack",
+    package = "ggsegAtlasTrack",
     filename = here::here(sprintf("man/figures/logo.%s", ext)),
     # Subplot positioning
     s_x = 1,

@@ -38,7 +38,7 @@ pak::pak("ggsegverse/ggsegAtlasTrack")
 
 ``` r
 library(ggseg.formats)
-library(ggsegAtlastrack)
+library(ggsegAtlasTrack)
 
 plot(atlastrack())
 ```

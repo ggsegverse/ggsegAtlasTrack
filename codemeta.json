@@ -4,8 +4,13 @@
   "identifier": "ggsegAtlasTrack",
   "description": "AtlasTrack probabilistic white matter fiber tract atlas for the 'ggseg' ecosystem. Provides 'ggseg_atlas' objects for DTI fiber tract visualization, commonly used with ABCD study data.",
   "name": "ggsegAtlasTrack: AtlasTrack Fiber Tract Atlas for the 'ggseg' Ecosystem",
-  "codeRepository": "https://github.com/ggsegverse/ggsegAtlastrack",
-  "issueTracker": "https://github.com/ggsegverse/ggsegAtlastrack/issues",
+<<<<<<< HEAD
+  "codeRepository": "https://github.com/ggsegverse/ggsegAtlasTrack",
+  "issueTracker": "https://github.com/ggsegverse/ggsegAtlasTrack/issues",
+=======
+  "codeRepository": "https://github.com/ggsegverse/ggsegAtlasTrack",
+  "issueTracker": "https://github.com/ggsegverse/ggsegAtlasTrack/issues",
+>>>>>>> b9cf611 (fix package name)
   "license": "https://spdx.org/licenses/MIT",
   "version": "2.0.0",
   "programmingLanguage": {
@@ -123,8 +128,13 @@
     },
     "SystemRequirements": null
   },
+<<<<<<< HEAD
   "fileSize": "1010.242KB",
-  "releaseNotes": "https://github.com/ggsegverse/ggsegAtlastrack/blob/main/NEWS.md",
+  "releaseNotes": "https://github.com/ggsegverse/ggsegAtlasTrack/blob/main/NEWS.md",
+=======
+  "fileSize": "1187.449KB",
+  "releaseNotes": "https://github.com/ggsegverse/ggsegAtlasTrack/blob/main/NEWS.md",
+>>>>>>> b9cf611 (fix package name)
   "readme": "https://github.com/ggsegverse/ggsegAtlasTrack/blob/main/README.md",
   "contIntegration": "https://github.com/ggsegverse/ggsegAtlasTrack/actions/workflows/R-CMD-check.yaml"
 }

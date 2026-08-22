@@ -1,4 +1,4 @@
 library(testthat)
-library(ggsegAtlastrack)
+library(ggsegAtlasTrack)
 
-test_check("ggsegAtlastrack")
+test_check("ggsegAtlasTrack")
