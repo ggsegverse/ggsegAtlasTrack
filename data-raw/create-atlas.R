@@ -234,20 +234,18 @@ atlastrack <- atlastrack |>
     scope = "piece",
     exclude = "^cortex"
   ) |>
+  atlas_simplify(keep = 0.4, labels = "^cortex") |>
+  atlas_simplify(keep = 0.2, exclude = "^cortex") |>
   atlas_smooth(
-    keep = 1,
     smoothness = 0.8,
     method = "close",
     exclude = "^cortex"
   ) |>
   atlas_smooth(
-    keep = 1,
     smoothness = 0.6,
     method = "ksmooth",
     labels = "^cortex"
-  ) |>
-  atlas_smooth(keep = 0.4, labels = "^cortex") |>
-  atlas_smooth(keep = 0.2, exclude = "^cortex")
+  )
 
 # ── Choose which tracts each view draws ──────────────────────────────────
 # Every tract has geometry in most views, which leaves each panel cluttered
