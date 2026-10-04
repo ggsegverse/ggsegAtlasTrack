@@ -31,7 +31,7 @@ atlastrack <- create_tract_from_volume(
   exclude = c(2000, 2001, 2002, 2003, 2004, 1014, 1024),
   atlas_name = "atlastrack",
   output_dir = "data-raw",
-  tube_radius = 3,
+  tube_opts = list(tube_radius = 3),
   cleanup = FALSE
 )
 
